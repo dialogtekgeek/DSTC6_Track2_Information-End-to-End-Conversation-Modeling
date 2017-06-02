@@ -68,3 +68,7 @@ We will provide the access token to download the tools and data sets.
 - collect_twitter_dialogs : scripts to collect twitter data
 - ChatbotBaseline : a neural conversation model baseline system
 
+## Contac Information 
+You can get the latest updates and participate in discussions on DSTC mailing list
+
+To join the mailing list, send an email to: (listserv@lists.research.microsoft.com) putting "subscribe DSTC" in the body of the message (without the quotes). To post a message, send your message to: (dstc@lists.research.microsoft.com).
