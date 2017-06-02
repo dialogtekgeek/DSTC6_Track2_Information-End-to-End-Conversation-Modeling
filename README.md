@@ -14,6 +14,13 @@ with the training, validation and test data provided by organizers.
 
 # Necessary steps
 
+The tools and data sets are available for the DSTC6 attendees. 
+Please visit the following page to make your registration.
+
+    http://workshop.colips.org/dstc6/index.html
+
+We will provide the access token to download the tools and data sets.
+
 ## Twitter task
 
 1. prepare data set using collect_twitter_dialogs scripts.
