@@ -10,7 +10,7 @@
     Task B: Any open data, e.g. from web, are available as external knowledge to generate informative sentences. But they should not overlap
 with the training, validation and test data provided by organizers.
 
-2. Pilot task: Movie scenario dialog using OpenSubtitle
+2. Pilot task: Movie script dialog using OpenSubtitles
 
 # Necessary steps
 
@@ -19,54 +19,67 @@ Please visit the following page to make your registration.
 
     http://workshop.colips.org/dstc6/index.html
 
-We will provide the access token to download the tools and data sets.
+We will provide the access token to download the data collection tools and the baseline system.
 
 ## Twitter task
 
-1. prepare data set using collect_twitter_dialogs scripts.
+1. prepare data set using `collect_twitter_dialogs` scripts.
 
-    (see collect_twitter_dialogs/README.md)
-
-2. extract training and development sets from stored twitter dialog data
-
-    use make_trial_data.sh in tasks/twitter.
-
+    ```
+    $ cd collect_twitter_dialogs
+    $ collect.sh
+    ```
+    (a twitter account and access keys are necessary to run the script. follow the instruction in `collect_twitter_dialogs/README.md`)
+   
+2. extract training, development and test sets from the stored twitter dialog data
+    
+    ```
+    $ cd ../tasks/twitter
+    $ make_trial_data.sh
+    ```
+    
     Note: the extracted data are trial data at this moment.
 
 3. run baseline system (optional)
 
-    copy the data files into ChatbotBaseline/egs/twitter and
-    execute 'run.sh' in ChatbotBaseline/egs/twitter.
-    (see ChatbotBaseline/egs/twitter/README.md)
+    ```
+    $ cd ../../ChatbotBaseline/egs/twitter
+    $ run.sh
+    ```
+    
+    (see `ChatbotBaseline/README.md`)
 
 ## OpenSubtitles task
 
-1. download OpenSubtitles2016 data:
+1. download OpenSubtitles2016 data
 
-    http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz
-
-    and extract xml files by
-
+    ```
+    $ cd tasks/opensubs
+    $ wget http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz
     $ tar zxvf en.tar.gz
+    ```
 
-2. extract training and development sets from stored subtitle data
+2. extract training, development and test sets from the stored subtitle data 
 
-    use make_trial_data.sh in tasks/opensubs.
-
+    ```
+    $ make_trial_data.sh
+    ```
     Note: the extracted data are trial data at this moment.
 
 3. run baseline system (optional)
 
-    copy the data files into ChatbotBaseline/egs/opensubs and
-    execute 'run.sh' in ChatbotBaseline/egs/opensubs.
-
-    (see ChatbotBaseline/egs/opensubs/README.md)
-
+    ```
+    $ cd ../../ChatbotBaseline/egs/opensubs
+    $ run.sh
+    ```
+    
+    (see `ChatbotBaseline/README.md`)
+    
 ## Directories and files
-- README.md : this file
-- tasks : data preparation for each subtask
-- collect_twitter_dialogs : scripts to collect twitter data
-- ChatbotBaseline : a neural conversation model baseline system
+* README.md : this file
+* tasks : data preparation for each subtask
+* collect_twitter_dialogs : scripts to collect twitter data
+* ChatbotBaseline : a neural conversation model baseline system
 
 ## Contac Information 
 You can get the latest updates and participate in discussions on DSTC mailing list
