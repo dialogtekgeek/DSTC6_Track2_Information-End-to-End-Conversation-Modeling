@@ -2,8 +2,9 @@
 
 1. Main task (mandatory): Customer service dialog using Twitter
 
-    (*) The tools to download the twitter data and transform to the dialog format from the data are provided.
-
+    (*) The tools to download twitter data and extract the dialog text are provided to all attendees at DSTC6 Track #2. 
+      The attendees need to collect the data by themselves. The data collected before Aug. 1st are available as trial data, 
+      and the official training/development data will be collected from Aug. 1st to 31st .
 
     Task A: Full or part of the training data will be used to train conversation models.
 
