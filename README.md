@@ -1,4 +1,4 @@
-# DSTC6_Track2_Information-End-to-End-Conversation-Modeling
+# DSTC6_Information-End-to-End-Conversation-Modeling
 
 1. Main task (mandatory): Customer service dialog using Twitter
 
