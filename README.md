@@ -1,4 +1,6 @@
 # DSTC6_Information-End-to-End-Conversation-Modeling
+Please go to the following link:
+https://github.com/dialogtekgeek/DSTC6-End-to-End-Conversation-Modeling
 
 1. Main task (mandatory): Customer service dialog using Twitter
 
